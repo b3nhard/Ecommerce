@@ -1,0 +1,39 @@
+<header>
+    <div class="banner">
+        <p>We offer free delivery for purchase worth 100,000 and above </p>
+    </div>
+    <nav>
+        <div class="brand">
+            <img src="../assets/logo.png" alt="Shop Logo">
+        </div>
+        <ul>
+            <li active><a routerLink="/">Home</a></li>
+            <li><a routerLink="/">Mens</a></li>
+            <li><a routerLink="/">Women</a></li>
+            <li><a routerLink="/categories">Categories</a></li>
+            <li><a routerLink="/">Contacts</a></li>
+        </ul>
+        <div class="tools">
+            <button (click)="toggleCart()" class="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <circle cx="176" cy="416" r="16" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="32" />
+                    <circle cx="400" cy="416" r="16" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="32" />
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="32" d="M48 80h64l48 272h256" />
+                    <path d="M160 288h249.44a8 8 0 007.85-6.43l28.8-144a8 8 0 00-7.85-9.57H128" fill="none"
+                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+                </svg>
+                <div class="cart-count">{{cartItems.length}}</div>
+            </button>
+            <a routerLink="/auth/login">
+                <button class="login-btn">
+                    Login
+                </button>
+            </a>
+
+
+        </div>
+    </nav>
+</header>

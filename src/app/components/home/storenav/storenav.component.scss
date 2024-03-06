@@ -1,0 +1,23 @@
+.sidebar{
+    background-color: white;
+    max-width: 300px;
+    max-height: 100dvh;
+    min-height: 60dvh;
+    padding: 5px;
+    border-radius: 5px;
+    ul{
+        list-style: none;
+        li{
+            padding: 5px;
+            border-radius: 5px;
+            a{
+                text-decoration: none;
+                color: var(--dark);
+                font-weight: 600;
+            }
+        }
+        li:hover{
+            background-color: var(--light);
+        }
+    }
+}

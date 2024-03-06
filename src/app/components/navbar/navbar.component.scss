@@ -1,0 +1,111 @@
+header{
+    background-color: #ffffff;
+    z-index: 1;
+    // padding: 0 1rem;
+    margin-bottom: 1rem;
+
+    .banner{
+        padding: 1rem 0;
+        text-align: center;
+        color: var(--dark);
+        font-weight: 600;
+        font-size: small;
+        background-color: var(--translucent);
+        @media screen and (min-width:576px){
+            font-size: medium;
+        }
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        @media screen and (min-width:576px){
+            width: 80%;
+            margin: auto;
+            margin-bottom: 1rem;
+        }
+        
+        .brand{
+            img{
+                height: 50px;
+            }
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            @media screen and (max-width:576px){
+                flex-direction: column;
+            }
+            li{
+                padding: 1rem 0;
+                a{
+                    padding:  1rem 0;
+                    color: var(--dark);
+                    font-size: medium;
+                    font-weight: 600;
+                    padding: 0 1rem ;
+                    text-decoration: none;
+                }
+                &:hover{
+                    border-bottom:  3px solid var(--dark);
+                }
+                &[active]{
+                    color: var(--primary);
+                }
+            }
+        }
+        .tools{
+            display: flex;
+            align-items: center;
+            button{
+                cursor: pointer;
+                border: none;
+                background: none;
+            }
+            .cart{ 
+                display: flex;
+                
+                svg{
+                    height: 2rem;
+                    color: var(--dark);
+                    margin: 0px 5px;
+                    &:hover{
+                        color: var(--primary) ;
+                    }
+                }
+                .cart-count{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    right: 1rem;
+                    height: 20px;
+                    width: 20px;
+                    background-color: var(--dark);
+                    color: white;
+                    border-radius: 50%;
+                }
+            }
+            
+                a{
+                    text-decoration: none;
+                    color: var(--dark);
+                    .login-btn{
+                        font-weight: 600;
+                        font-size: medium;
+                        border: 1px solid grey;
+                        padding: 4px 20px;
+                        margin: 0px 10px;
+                        border-radius: 3px;
+                    }
+                    
+                }
+                
+
+            
+            
+        }
+    }
+}

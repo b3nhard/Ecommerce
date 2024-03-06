@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family: "Poppins", san-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: var(--light);
+    max-width: 100dvw;
+    overflow-x: hidden;
+}
+body{
+    width: 100dvw;
+}
+
+:root{
+    // --primary:#ff0000;
+    // --light:#ebecee;
+    --light:#e7f8f5;
+    --dark:#001441;
+    --secondary:#237ef7;
+    // --success:#0d9f4f;
+    --success:#86e40b;
+    --translucent:#86e40b8b;
+}
+
+
+
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins/Poppins-Medium.ttf") format("ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins/Poppins-SemiBold.ttf") format("ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins/Poppins-Bold.ttf") format("ttf");
+    font-weight: bold;
+    font-style: normal;
+}

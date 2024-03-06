@@ -1,0 +1,23 @@
+<div class="cart">
+    <h2>Cart Items {{cartItems.length}}</h2>
+    <div class="cart-items">
+        <div *ngFor="let item of cartItems" class="cart-item">
+            <img [src]="item.image" alt="" height="100" width="100">
+            <div class="cart-item-details">
+                <p>{{item.title}}</p>
+                <p>${{item.price}}</p>
+            </div>
+        </div>
+        <p *ngIf="cartItems.length<1">No items in the cart</p>
+        <div *ngIf="cartItems.length>0" class="totals">
+            <p>Total: ${{calculateTotal(cartItems)}}</p>
+            <button (click)="clearCart()" class="clear-cart">Clear Cart</button>
+        </div>
+        <hr>
+    </div>
+    <div class="footer">
+
+        <button *ngIf="cartItems.length>0" class="checkout">Checkout</button>
+        <button (click)="closeCart()" class="continue">Continue Shopping</button>
+    </div>
+</div>
